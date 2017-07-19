@@ -56,81 +56,13 @@
                             <div class="thumbnail col-xs-12">
                                 <div class="col-xs-12 borrow">
                                     
-                                    <h2 class=" text-overflow bookname">测试5</h2>
-                                    <h4 class="text-overflow">作者：123</h4>
-                                                                            <h5 class="text-overflow">借阅人：可借阅</h5>
-                                                                        <p class="book-pic">
-                                        <a href="http://library51.app/book/9">
-
-                                            <img class="" width="130" height="130" src="http://library51.app/uploads/22cf8d1945f398670d380af084f79903.jpg"
-                                                 alt=""/>
-                                        </a>
-                                    </p>
-                                    <div>
-                                        <div style="width: 50%">
-
-                                        </div>
-                                        <div align="right">
-                                            <form method="POST" action="http://library51.app/admin/book/9" accept-charset="UTF-8" class="btn_form" data-book-id="9" bookname="测试5" bookpic="http://library51.app/uploads/22cf8d1945f398670d380af084f79903.jpg"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="jqqLzp7He5RJIHi8DDiWK8rDQuzHO76vAubqYfv2">
-                                            <button role="button" data-toggle="modal" type="button"
-                                                    class="btn btn-default borrow-btn">
-                                                <span aria-hidden="true"></span>
-                                                跪求
-                                            </button>
-                                            </form>
-
-                                        </div>
-                                    </div>
-                                    <p>
-                                    </p>
-                                                                    </div>
-                            </div>
-                        </div><!--/.col-xs-6.col-lg-4-->
-                                            <div class=" col-xs-6 col-lg-4">
-                            <div class="thumbnail col-xs-12">
-                                <div class="col-xs-12 borrow">
-                                    
-                                    <h2 class=" text-overflow bookname">测试5</h2>
-                                    <h4 class="text-overflow">作者：123</h4>
-                                                                            <h5 class="text-overflow">借阅人：可借阅</h5>
-                                                                        <p class="book-pic">
-                                        <a href="http://library51.app/book/8">
-
-                                            <img class="" width="130" height="130" src="http://library51.app/uploads/053719fd9f38d4cef9e78d8957deb8aa.jpg"
-                                                 alt=""/>
-                                        </a>
-                                    </p>
-                                    <div>
-                                        <div style="width: 50%">
-
-                                        </div>
-                                        <div align="right">
-                                            <form method="POST" action="http://library51.app/admin/book/8" accept-charset="UTF-8" class="btn_form" data-book-id="8" bookname="测试5" bookpic="http://library51.app/uploads/053719fd9f38d4cef9e78d8957deb8aa.jpg"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="jqqLzp7He5RJIHi8DDiWK8rDQuzHO76vAubqYfv2">
-                                            <button role="button" data-toggle="modal" type="button"
-                                                    class="btn btn-default borrow-btn">
-                                                <span aria-hidden="true"></span>
-                                                跪求
-                                            </button>
-                                            </form>
-
-                                        </div>
-                                    </div>
-                                    <p>
-                                    </p>
-                                                                    </div>
-                            </div>
-                        </div><!--/.col-xs-6.col-lg-4-->
-                                            <div class=" col-xs-6 col-lg-4">
-                            <div class="thumbnail col-xs-12">
-                                <div class="col-xs-12 borrow">
-                                    
-                                    <h2 class=" text-overflow bookname">测试4</h2>
+                                    <h2 class=" text-overflow bookname">测试6</h2>
                                     <h4 class="text-overflow">作者：酸酸</h4>
                                                                             <h5 class="text-overflow">借阅人：可借阅</h5>
                                                                         <p class="book-pic">
-                                        <a href="http://library51.app/book/7">
+                                        <a href="http://library51.app/book/12">
 
-                                            <img class="" width="130" height="130" src="http://library51.app/uploads/a4b3389590e2e4aa37b84be6721371ea.jpg"
+                                            <img class="" width="130" height="130" src="http://library51.app/uploads/aa8acb3a9c3371b4935c093c78bef1a9.jpg"
                                                  alt=""/>
                                         </a>
                                     </p>
@@ -139,7 +71,7 @@
 
                                         </div>
                                         <div align="right">
-                                            <form method="POST" action="http://library51.app/admin/book/7" accept-charset="UTF-8" class="btn_form" data-book-id="7" bookname="测试4" bookpic="http://library51.app/uploads/a4b3389590e2e4aa37b84be6721371ea.jpg"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="jqqLzp7He5RJIHi8DDiWK8rDQuzHO76vAubqYfv2">
+                                            <form method="POST" action="http://library51.app/admin/book/12" accept-charset="UTF-8" class="btn_form" data-book-id="12" bookname="测试6" bookpic="http://library51.app/uploads/aa8acb3a9c3371b4935c093c78bef1a9.jpg"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="4Cnpz9bGKFur38mU9sMDIH8dodoMMGf4vm1jTxBD">
                                             <button role="button" data-toggle="modal" type="button"
                                                     class="btn btn-default borrow-btn">
                                                 <span aria-hidden="true"></span>
@@ -174,7 +106,7 @@
 
                                         </div>
                                         <div align="right">
-                                            <form method="POST" action="http://library51.app/admin/book/3" accept-charset="UTF-8" class="btn_form" data-book-id="3" bookname="测试2" bookpic="http://library51.app/uploads/86d72667ccf2ae129aa1d636382cf282.jpg"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="jqqLzp7He5RJIHi8DDiWK8rDQuzHO76vAubqYfv2">
+                                            <form method="POST" action="http://library51.app/admin/book/3" accept-charset="UTF-8" class="btn_form" data-book-id="3" bookname="测试2" bookpic="http://library51.app/uploads/86d72667ccf2ae129aa1d636382cf282.jpg"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="4Cnpz9bGKFur38mU9sMDIH8dodoMMGf4vm1jTxBD">
                                             <button role="button" data-toggle="modal" type="button"
                                                     class="btn btn-default borrow-btn">
                                                 <span aria-hidden="true"></span>
@@ -208,7 +140,7 @@
 
                                         </div>
                                         <div align="right">
-                                            <form method="POST" action="http://library51.app/admin/book/2" accept-charset="UTF-8" class="btn_form" data-book-id="2" bookname="测试1" bookpic="http://library51.app/uploads/86d72667ccf2ae129aa1d636382cf282.jpg"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="jqqLzp7He5RJIHi8DDiWK8rDQuzHO76vAubqYfv2">
+                                            <form method="POST" action="http://library51.app/admin/book/2" accept-charset="UTF-8" class="btn_form" data-book-id="2" bookname="测试1" bookpic="http://library51.app/uploads/86d72667ccf2ae129aa1d636382cf282.jpg"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="4Cnpz9bGKFur38mU9sMDIH8dodoMMGf4vm1jTxBD">
                                             <button role="button" data-toggle="modal" type="button"
                                                     class="btn btn-default borrow-btn">
                                                 <span aria-hidden="true"></span>
@@ -243,7 +175,7 @@
 
                                         </div>
                                         <div align="right">
-                                            <form method="POST" action="http://library51.app/admin/book/1" accept-charset="UTF-8" class="btn_form" data-book-id="1" bookname="PHP编程（第3版）" bookpic="http://library51.app/uploads/4c0b4a3e1cc63ee2af8a41798dc4f6d8.jpg"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="jqqLzp7He5RJIHi8DDiWK8rDQuzHO76vAubqYfv2">
+                                            <form method="POST" action="http://library51.app/admin/book/1" accept-charset="UTF-8" class="btn_form" data-book-id="1" bookname="PHP编程（第3版）" bookpic="http://library51.app/uploads/4c0b4a3e1cc63ee2af8a41798dc4f6d8.jpg"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="4Cnpz9bGKFur38mU9sMDIH8dodoMMGf4vm1jTxBD">
                                             <button role="button" data-toggle="modal" type="button"
                                                     class="btn btn-default borrow-btn">
                                                 <span aria-hidden="true"></span>
@@ -365,7 +297,7 @@
                     data: $('.borrow-form').serialize(),
                     dataType: 'json',
                     headers: {
-                        'X-CSRF-TOKEN': 'jqqLzp7He5RJIHi8DDiWK8rDQuzHO76vAubqYfv2'
+                        'X-CSRF-TOKEN': '4Cnpz9bGKFur38mU9sMDIH8dodoMMGf4vm1jTxBD'
                     },
                     beforeSend: function () {
                     },

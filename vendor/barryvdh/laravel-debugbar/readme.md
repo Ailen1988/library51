@@ -150,7 +150,7 @@ set the config option 'inject' to false and use the renderer yourself and follow
 $renderer = Debugbar::getJavascriptRenderer();
 ```
 
-Note: Not using the auto-inject, will disable the Request information, because that is added After the response.
+Note: Not using the auto-inject,Debugbar::disable() will disable the Request information, because that is added After the response.
 You can add the default_request datacollector in the config as alternative.
 
 ## Enabling/Disabling on run time
