@@ -43,7 +43,7 @@
                                                 'bookpic'=>asset('/uploads/'.$v->pic)
                                             ]) !!}
                                             <button role="button" data-toggle="modal" type="button"
-                                                    class="btn btn-default borrow-btn">
+                                                    class="btn btn-default borrow-btn ">
                                                 <span aria-hidden="true"></span>
                                                 跪求
                                             </button>
@@ -71,7 +71,33 @@
         </div><!-- /pagination -->
     </div><!--/.container-->
 
+    {{--<ul>--}}
+        {{--<li><a id="demo01" href="#animatedModal">DEMO01</a></li>--}}
+        {{--<li><a id="demo02" href="#modal-02">DEMO02</a></li>--}}
+    {{--</ul>--}}
+    {{--<!--DEMO01-->--}}
+    {{--<div id="animatedModal">--}}
+        {{--<!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->--}}
+        {{--<div  id="btn-close-modal" class="close-animatedModal">--}}
+            {{--CLOSE MODAL--}}
+        {{--</div>--}}
 
+        {{--<div class="modal-content">--}}
+            {{--<!--Your modal content goes here-->--}}
+        {{--</div>--}}
+    {{--</div>--}}
+
+    {{--<!--DEMO02-->--}}
+    {{--<div id="modal-02">--}}
+        {{--<!--"THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID-->--}}
+        {{--<div  id="btn-close-modal" class="close-modal-02">--}}
+            {{--CLOSE MODAL--}}
+        {{--</div>--}}
+
+        {{--<div class="modal-content">--}}
+            {{--<!--Your modal content goes here-->--}}
+        {{--</div>--}}
+    {{--</div>--}}
     <!-- REQUIRED JS SCRIPTS -->
     <div class="container ">
         <div class="row clearfix">
@@ -108,7 +134,7 @@
                                     <button type="button" class="btn btn-default btn-close" data-dismiss="modal">关闭</button>
                                     <button autocomplete="off" data-error-text="出错了!" data-complete-text="赏了"
                                             data-limit-text="每人最多赏赐两本" data-exists-text="你来晚了" data-loading-text="执行中.." id="check-borrow-btn"
-                                            type="button" class="btn btn-primary">确定借出
+                                            type="button" class="btn btn-primary demo01">确定借出
                                     </button>
                                 </div>
                             </form>
@@ -118,10 +144,12 @@
             </div>
         </div>
     </div>
+
     <!-- jQuery 2.2.3 -->
     <script src="{{ asset("/bower_components/AdminLTE/plugins/jQuery/jquery-2.2.3.min.js")}}"></script>
     <!-- Bootstrap 3.3.6 -->
     <script src="{{ asset("/bower_components/AdminLTE/bootstrap/js/bootstrap.min.js")}}"></script>
+
 
     <script>
         $(function () {
@@ -156,22 +184,33 @@
                     beforeSend: function () {
                     },
                     success: function (d) {
-                        if (d == 1) {
-                            $btn.button("complete");
-                        } else if (d == 2) {
-                            $btn.button("exists");
-                        } else if (d == 3) {
-                            $btn.button("limit");
+
+                        if (d.code == 1) {
+//                            $btn.button("complete");
+                            alert(d.msg);
+//                            $("#demo01").animatedModal();
+                        } else if (d.code == 2) {
+                            alert(d.msg);
+//                            $btn.button("exists");
+                        } else if (d.code == 3) {
+                            alert(d.msg);
+//                            $btn.button("limit");
                         } else {
-                            $btn.button("error");
+                            alert(d.msg);
+//                            $btn.button("error");
                         }
                     },
                     error: function (xhr, type) {
-                        $btn.button("error");
+                        alert(d.msg);
+//                        $btn.button("error");
                     },
                     complete: function (xhr, ts) {
                     }
+
+
                 });
+                window.location.reload();
+
             })
 
             // 刷新

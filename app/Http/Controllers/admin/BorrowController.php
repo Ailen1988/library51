@@ -11,12 +11,14 @@ use App\Model\Tag;
 use App\Model\Book;
 use App\Model\Category;
 use Cache;
+
 class BorrowController extends Controller
 {
     public function __construct()
     {
         conversionClassPath(__CLASS__);
     }
+
     /**
      * Display a listing of the resource.
      *
@@ -43,43 +45,67 @@ class BorrowController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
     {
-        sleep(1);
 
         if (empty($name = $request->input('name')) || empty($bookId = $request->input('book_id'))) {
-            die('0');
+            die(json_encode(
+                [
+                    'code' => 1,
+                    'msg' => '数据出错, 请重新尝试!'
+                ])
+            );
         }
+
         // 限制每个用户只能借阅一次
-        if(2 <= Borrow::where('name', '=', $name)
+        if (2 <= Borrow::where('name', '=', $name)
                 ->where('status', '=', '0')
-            ->count()
+                ->count()
         ) {
-            die('3');
+            die(json_encode(
+                [
+                    'code' => 3,
+                    'msg' => '每人最多借阅2本'
+                ])
+            );
         }
 
         //判断是否借出
         if (Borrow::where("status", "=", 0)
-//            ->where("number", "=", $number)
             ->where("book_id", "=", $bookId)
-//            ->where("name", "=", $name)
-            ->first()) {
-            die('2');
+            ->first()
+        ) {
+            die(json_encode(
+                [
+                    'code' => 2,
+                    'msg' => '书本已借出'
+                ])
+            );
         }
         if (Borrow::create($request->all())) {
-            echo 1;
+            die(json_encode(
+                [
+                    'code' => 1,
+                    'msg' => '你现已借阅'.$name.'书，可到908休闲区书架上领取，记得一个月内归还哦'
+                ])
+            );
         } else {
-            die('0');
+            die(json_encode(
+                [
+                    'code' => 0,
+                    'msg' => '出错了!'
+                ])
+            );
         }
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  int $id
      * @return \Illuminate\Http\Response
      */
     public function show($id)
@@ -90,7 +116,7 @@ class BorrowController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  int $id
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
@@ -101,8 +127,8 @@ class BorrowController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \Illuminate\Http\Request $request
+     * @param  int $id
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
@@ -113,7 +139,7 @@ class BorrowController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  int $id
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
@@ -123,7 +149,7 @@ class BorrowController extends Controller
 
     /**
      * 设置借书状态为已归还
-     * 
+     *
      */
     public function bookReturn($borrowId)
     {
@@ -135,16 +161,16 @@ class BorrowController extends Controller
         return back();
     }
 
-    
+
     /**
      * 获取检索的键值数组列表
-     * @return array 
+     * @return array
      */
     private function getSchParams()
     {
         return [
             'keyword' => Input::get('keyword'),
-            'name_or_number' =>Input::get('name_or_number'),
+            'name_or_number' => Input::get('name_or_number'),
         ];
     }
 
@@ -156,16 +182,16 @@ class BorrowController extends Controller
     {
         return Borrow::select("borrows.*", "b.id as b_id", "b.bookname", "b.author")
             ->leftJoin("books as b", "borrows.book_id", "=", "b.id")
-            ->where(function($query) use ($schParams) {
+            ->where(function ($query) use ($schParams) {
                 if ($keyword = $schParams["keyword"]) {
-                    $query->where(function($query) use ($keyword) {
+                    $query->where(function ($query) use ($keyword) {
                         $query->where("b.bookname", "like", "%$keyword%")
-                        ->orWhere("b.author", "=", $keyword);
+                            ->orWhere("b.author", "=", $keyword);
                     });
                 }
 
                 if ($name_or_number = $schParams["name_or_number"]) {
-                    $query->where(function($query) use ($name_or_number) {
+                    $query->where(function ($query) use ($name_or_number) {
                         $query->where("borrows.name", "=", $name_or_number);
                     });
                 }
