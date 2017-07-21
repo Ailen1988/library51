@@ -7,10 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fbbda76a-5c46-4cdd-8777-ed47823519f3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Model/Book.php" afterPath="$PROJECT_DIR$/app/Model/Book.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/themes/default/layouts.blade.php" afterPath="$PROJECT_DIR$/resources/views/themes/default/layouts.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/themes/default/search.blade.php" afterPath="$PROJECT_DIR$/resources/views/themes/default/search.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/themes/default/searchCategory.blade.php" afterPath="$PROJECT_DIR$/resources/views/themes/default/searchCategory.blade.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,8 +26,8 @@
       <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/themes/default/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="83" lean-forward="false" selection-start-line="17" selection-start-column="83" selection-end-line="17" selection-end-column="83" />
+            <state relative-caret-position="684">
+              <caret line="207" column="21" lean-forward="false" selection-start-line="207" selection-start-column="21" selection-end-line="207" selection-end-column="21" />
               <folding>
                 <marker date="1500604519367" expanded="true" signature="1976:2504" ph="..." />
                 <marker date="1500604519367" expanded="true" signature="1988:2502" ph="..." />
@@ -39,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layouts.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="layouts.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/themes/default/layouts.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="40" column="137" lean-forward="false" selection-start-line="40" selection-start-column="137" selection-end-line="40" selection-end-column="137" />
+            <state relative-caret-position="437">
+              <caret line="23" column="112" lean-forward="true" selection-start-line="23" selection-start-column="112" selection-end-line="23" selection-end-column="112" />
               <folding />
             </state>
           </provider>
@@ -69,12 +67,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="search.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/themes/default/search.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="24" column="32" lean-forward="false" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-              <folding />
+            <state relative-caret-position="518">
+              <caret line="150" column="29" lean-forward="false" selection-start-line="150" selection-start-column="29" selection-end-line="150" selection-end-column="29" />
+              <folding>
+                <marker date="1500609803586" expanded="true" signature="1732:2092" ph="..." />
+                <marker date="1500609803586" expanded="true" signature="1744:2090" ph="..." />
+                <marker date="1500609803586" expanded="true" signature="1745:2089" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -92,7 +94,7 @@
       <file leaf-file-name="BookController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/admin/BookController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3591">
+            <state relative-caret-position="375">
               <caret line="197" column="21" lean-forward="false" selection-start-line="197" selection-start-column="21" selection-end-line="197" selection-end-column="21" />
               <folding />
             </state>
@@ -102,12 +104,13 @@
       <file leaf-file-name="searchCategory.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/themes/default/searchCategory.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="20" column="25" lean-forward="false" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+            <state relative-caret-position="1363">
+              <caret line="129" column="4" lean-forward="false" selection-start-line="129" selection-start-column="4" selection-end-line="129" selection-end-column="4" />
               <folding>
-                <marker date="1500025609646" expanded="true" signature="1720:2080" ph="..." />
-                <marker date="1500025609646" expanded="true" signature="1732:2078" ph="..." />
-                <marker date="1500025609646" expanded="true" signature="1733:2077" ph="..." />
+                <element signature="e#703#2552#0#HTML" expanded="false" />
+                <marker date="1500609803901" expanded="true" signature="1720:2080" ph="..." />
+                <marker date="1500609803901" expanded="true" signature="1732:2078" ph="..." />
+                <marker date="1500609803901" expanded="true" signature="1733:2077" ph="..." />
               </folding>
             </state>
           </provider>
@@ -116,8 +119,8 @@
       <file leaf-file-name="BorrowController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/admin/BorrowController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="969">
-              <caret line="59" column="13" lean-forward="false" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
+            <state relative-caret-position="451">
+              <caret line="63" column="48" lean-forward="false" selection-start-line="63" selection-start-column="48" selection-end-line="63" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -142,7 +145,6 @@
       <find>borrow-btn</find>
       <find>hid</find>
       <find>book-id</find>
-      <find>bookname</find>
       <find>#input-book-id</find>
       <find>input-book-id</find>
       <find>l['chessOrder']}</find>
@@ -167,6 +169,7 @@
       <find>navbar</find>
       <find>home</find>
       <find>demo_sinput form-control</find>
+      <find>bookname</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -204,7 +207,6 @@
         <option value="$PROJECT_DIR$/resources/views/admin/content/cate/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/content/tags/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/content/borrow/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/themes/default/searchCategory.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/themes/default/searchTag.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2017_07_14_143609_create_books_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2017_07_14_220014_create_borrow_table.php" />
@@ -223,9 +225,10 @@
         <option value="$PROJECT_DIR$/public/bower_components/AdminLTE/bootstrap/js/bootstrap.js" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/admin/BorrowController.php" />
         <option value="$PROJECT_DIR$/resources/views/themes/default/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/themes/default/search.blade.php" />
         <option value="$PROJECT_DIR$/app/Model/Book.php" />
         <option value="$PROJECT_DIR$/resources/views/themes/default/layouts.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/themes/default/searchCategory.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/themes/default/search.blade.php" />
       </list>
     </option>
   </component>
@@ -534,12 +537,12 @@
       <workItem from="1500600654363" duration="4244000" />
       <workItem from="1500604969870" duration="2008000" />
       <workItem from="1500608506284" duration="650000" />
-      <workItem from="1500609183977" duration="289000" />
+      <workItem from="1500609183977" duration="723000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125911000" />
+    <option name="totallyTimeSpent" value="126345000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -879,46 +882,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/admin/BorrowController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="59" column="13" lean-forward="false" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/themes/default/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="83" lean-forward="false" selection-start-line="17" selection-start-column="83" selection-end-line="17" selection-end-column="83" />
-          <folding>
-            <marker date="1500604519367" expanded="true" signature="1976:2504" ph="..." />
-            <marker date="1500604519367" expanded="true" signature="1988:2502" ph="..." />
-            <marker date="1500604519367" expanded="true" signature="1989:2501" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/themes/default/searchCategory.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="25" lean-forward="false" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-          <folding>
-            <marker date="1500025609646" expanded="true" signature="1720:2080" ph="..." />
-            <marker date="1500025609646" expanded="true" signature="1732:2078" ph="..." />
-            <marker date="1500025609646" expanded="true" signature="1733:2077" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/admin/BookController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3591">
-          <caret line="197" column="21" lean-forward="false" selection-start-line="197" selection-start-column="21" selection-end-line="197" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/storage/framework/views/1a9501869b185285259ca281dd5ee3a2">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="382">
@@ -935,22 +898,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Model/Book.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="151" column="50" lean-forward="false" selection-start-line="151" selection-start-column="50" selection-end-line="151" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/themes/default/search.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="24" column="32" lean-forward="false" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/themes/default/staticPage/index.shtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
@@ -961,9 +908,70 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/themes/default/layouts.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="40" column="137" lean-forward="false" selection-start-line="40" selection-start-column="137" selection-end-line="40" selection-end-column="137" />
+        <state relative-caret-position="437">
+          <caret line="23" column="112" lean-forward="true" selection-start-line="23" selection-start-column="112" selection-end-line="23" selection-end-column="112" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/themes/default/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="207" column="21" lean-forward="false" selection-start-line="207" selection-start-column="21" selection-end-line="207" selection-end-column="21" />
+          <folding>
+            <marker date="1500604519367" expanded="true" signature="1976:2504" ph="..." />
+            <marker date="1500604519367" expanded="true" signature="1988:2502" ph="..." />
+            <marker date="1500604519367" expanded="true" signature="1989:2501" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/themes/default/searchCategory.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1363">
+          <caret line="129" column="4" lean-forward="false" selection-start-line="129" selection-start-column="4" selection-end-line="129" selection-end-column="4" />
+          <folding>
+            <element signature="e#703#2552#0#HTML" expanded="false" />
+            <marker date="1500609803901" expanded="true" signature="1720:2080" ph="..." />
+            <marker date="1500609803901" expanded="true" signature="1732:2078" ph="..." />
+            <marker date="1500609803901" expanded="true" signature="1733:2077" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Model/Book.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="151" column="50" lean-forward="false" selection-start-line="151" selection-start-column="50" selection-end-line="151" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/admin/BookController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="197" column="21" lean-forward="false" selection-start-line="197" selection-start-column="21" selection-end-line="197" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/admin/BorrowController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="63" column="48" lean-forward="false" selection-start-line="63" selection-start-column="48" selection-end-line="63" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/themes/default/search.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="150" column="29" lean-forward="false" selection-start-line="150" selection-start-column="29" selection-end-line="150" selection-end-column="29" />
+          <folding>
+            <marker date="1500609803586" expanded="true" signature="1732:2092" ph="..." />
+            <marker date="1500609803586" expanded="true" signature="1744:2090" ph="..." />
+            <marker date="1500609803586" expanded="true" signature="1745:2089" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
