@@ -89,7 +89,7 @@ class BorrowController extends Controller
             die(json_encode(
                 [
                     'code' => 1,
-                    'msg' => '你现已借阅'.$name.'书，可到908休闲区书架上领取，记得一个月内归还哦'
+                    'msg' => '你现已借阅［'.$request->input('bookname').'］，可到908休闲区书架上领取，记得一个月内归还哦'
                 ])
             );
         } else {

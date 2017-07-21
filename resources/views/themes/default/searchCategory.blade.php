@@ -107,7 +107,8 @@
               <div class="modal-body">
                 <form action="" class="form-horizontal">
                   <input type="hidden" name="book_id" id="input-book-id" value=""/>
-                  <div class="form-group">
+                    <input type="hidden" name="bookname" id="input-bookname" value=""/>
+                    <div class="form-group">
                     <div class="col-xs-12">
                       <input type="text" name="name" class="form-control" placeholder="员工姓名"/>
                     </div>
@@ -142,6 +143,7 @@
             var bookpic = bookObj.attr('bookpic');
 
             $("#input-book-id").val(bookid);
+            $("#input-bookname").val(bookname);
             $("#modal-bookname").text(bookname);
             $("#modal-book-pic").attr('src', bookpic);
             $('#check-borrow-btn').button('reset');
@@ -189,6 +191,7 @@
                 complete: function (xhr, ts) {
                 }
             });
+//            window.location.reload();
         })
 
         // 刷新

@@ -111,6 +111,7 @@
               <div class="modal-body">
                 <form action="" class="form-horizontal">
                   <input type="hidden" name="book_id" id="input-book-id" value=""/>
+                    <input type="hidden" name="bookname" id="input-bookname" value=""/>
                   <div class="form-group">
                     <div class="col-xs-12">
                       <input type="text" name="name" class="form-control" placeholder="员工姓名"/>
@@ -146,6 +147,7 @@
             var bookpic = bookObj.attr('bookpic');
 
             $("#input-book-id").val(bookid);
+            $("#input-bookname").val(bookname);
             $("#modal-bookname").text(bookname);
             $("#modal-book-pic").attr('src', bookpic);
             $('#check-borrow-btn').button('reset');
@@ -170,22 +172,30 @@
                 beforeSend: function () {
                 },
                 success: function (d) {
-                    if (d == 1) {
-                        $btn.button("complete");
-                    } else if (d == 2) {
-                        $btn.button("exists");
-                    } else if (d == 3) {
-                        $btn.button("limit");
+                    if (d.code == 1) {
+//                            $btn.button("complete");
+                        alert(d.msg);
+//                            $("#demo01").animatedModal();
+                    } else if (d.code == 2) {
+                        alert(d.msg);
+//                            $btn.button("exists");
+                    } else if (d.code == 3) {
+                        alert(d.msg);
+//                            $btn.button("limit");
                     } else {
-                        $btn.button("error");
+                        alert(d.msg);
+//                            $btn.button("error");
                     }
                 },
                 error: function (xhr, type) {
-                    $btn.button("error");
+                    alert(d.msg);
+//                    $btn.button("error");
                 },
                 complete: function (xhr, ts) {
                 }
             });
+
+//            window.location.reload();
         })
 
         // 刷新
