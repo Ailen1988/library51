@@ -70,8 +70,8 @@ class Book extends Model
 
 //        $model = self::select('id')->orderBy('id', 'DESC')->simplePaginate($limit);
 //        if (empty($model = Cache::tags(self::REDIS_BOOK_PAGE_TAG)->get(self::REDIS_NEW_BOOK_CACHE . $cacheName))) {
-            $model = self::select('id')->orderBy('id', 'DESC')->simplePaginate($limit);
-            Cache::tags(self::REDIS_BOOK_PAGE_TAG)->put(self::REDIS_NEW_BOOK_CACHE . $cacheName, $model, self::$cacheMinutes);
+        $model = self::select('id')->orderBy('id', 'DESC')->simplePaginate($limit);
+        Cache::tags(self::REDIS_BOOK_PAGE_TAG)->put(self::REDIS_NEW_BOOK_CACHE . $cacheName, $model, self::$cacheMinutes);
 //        }
 
         $bookList = array(
@@ -94,13 +94,19 @@ class Book extends Model
     {
 
 //        if (empty($book = Cache::get(self::REDIS_BOOK_CACHE . $bookId))) {
-            $book = self::select('books.*', 'b.name', 'b.number', 'b.created_at', 'b.status')
-                ->leftJoin("borrows as b", "b.book_id", "=", "books.id")
-                ->where('books.id', '=', $bookId)
+        $book = self::select('books.*', 'b.name', 'b.number', 'b.created_at', 'b.status')
+            ->leftJoin("borrows as b", function ($leftJoin) {
+                $leftJoin->on("b.book_id", "=", "books.id");
+//                $leftJoin->orderBy('b.book_id', 'desc');
+//                $leftJoin->limit(1);
+                $leftJoin->where('b.status', '=', '0');
+
+            })
+            ->where('books.id', '=', $bookId)
 //                ->where('b.status', '=', '0')
-                    ->orderBy('b.id', 'desc')
-                ->first();
-            Cache::add(self::REDIS_BOOK_CACHE . $bookId, $book, self::$cacheMinutes);
+            ->orderBy('b.id', 'desc')
+            ->first();
+        Cache::add(self::REDIS_BOOK_CACHE . $bookId, $book, self::$cacheMinutes);
 //        }
         return $book;
     }
@@ -141,8 +147,8 @@ class Book extends Model
         $cacheName = $page . '_' . md5($keyword);
 
 //        if (empty($model = Cache::tags(self::REDIS_BOOK_PAGE_TAG)->get(self::REDIS_SEARCH_BOOK_CACHE . $cacheName))) {
-            $model = self::select('id')->where('bookname', 'like', "%$keyword%")->orderBy('id', 'desc')->simplePaginate(10);
-            Cache::tags(self::REDIS_BOOK_PAGE_TAG)->put(self::REDIS_SEARCH_BOOK_CACHE . $cacheName, $model, self::$cacheMinutes);
+        $model = self::select('id')->where('bookname', 'like', "%$keyword%")->orderBy('id', 'desc')->simplePaginate(10);
+        Cache::tags(self::REDIS_BOOK_PAGE_TAG)->put(self::REDIS_SEARCH_BOOK_CACHE . $cacheName, $model, self::$cacheMinutes);
 //        }
 
         $bookList = array(
@@ -170,7 +176,13 @@ class Book extends Model
         $cateIdsList = $childrensIdsList;
 
         $book = self::select('books.*', 'b.name', 'b.number', 'b.created_at', 'b.status')
-            ->leftJoin("borrows as b", "b.book_id", "=", "books.id")
+            ->leftJoin("borrows as b", function ($leftJoin) {
+                $leftJoin->on("b.book_id", "=", "books.id");
+//                $leftJoin->orderBy('b.book_id', 'desc');
+//                $leftJoin->limit(1);
+                $leftJoin->where('b.status', '=', '0');
+
+            })
             ->wherein('cid', $cateIdsList)
             ->orderBy('b.id', 'desc')
             ->simplePaginate(9);
