@@ -147,7 +147,11 @@ class Book extends Model
         $cacheName = $page . '_' . md5($keyword);
 
 //        if (empty($model = Cache::tags(self::REDIS_BOOK_PAGE_TAG)->get(self::REDIS_SEARCH_BOOK_CACHE . $cacheName))) {
-        $model = self::select('id')->where('bookname', 'like', "%$keyword%")->orderBy('id', 'desc')->simplePaginate(10);
+        $model = self::select('id')
+            ->where('bookname', 'like', "%$keyword%")
+            ->orwhere('author', 'like', "%$keyword%")
+            ->orderBy('id', 'desc')
+            ->simplePaginate(10);
         Cache::tags(self::REDIS_BOOK_PAGE_TAG)->put(self::REDIS_SEARCH_BOOK_CACHE . $cacheName, $model, self::$cacheMinutes);
 //        }
 

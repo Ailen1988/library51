@@ -49,10 +49,6 @@
          {!! $bookList['page']->render($page) !!}
       </nav>
   </div>
-  <!-- /pagination -->
-  <footer>
-    <p>© maimai 2016</p>
-  </footer>
 
 </div><!--/.container-->
 @endsection

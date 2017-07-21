@@ -38,7 +38,7 @@
                         <li>
                             <form class="demo_search" action="{{url('search/keyword')}}" method="get">
                                 <i class="glyphicon glyphicon-search" id="open"></i>
-                                <input class="demo_sinput form-control " type="text" name="keyword" id="search_input" placeholder="输入关键字 回车搜索">
+                                <input class="demo_sinput form-control " type="text" name="keyword" id="search_input" placeholder="输入书名或作者">
                             </form>
                         </li>
                     </ul>
