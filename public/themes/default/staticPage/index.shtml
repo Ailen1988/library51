@@ -21,7 +21,7 @@
         <![endif]-->
     </head>
     <body>
-        <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+        <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation" style="background-color: #2D9EA7">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -33,8 +33,8 @@
                     <a class="navbar-brand" href="http://library51.app">TooMee Library</a></div>
                 <div id="navbar" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active">
-                            <a href="/">Home</a></li>
+                        <li class="active" >
+                            <a href="/" style="background-color: #79C1C7">Home</a></li>
                         <li>
                             <form class="demo_search" action="http://library51.app/search/keyword" method="get">
                                 <i class="glyphicon glyphicon-search" id="open"></i>
@@ -58,8 +58,7 @@
                                     
                                     <h2 class=" text-overflow bookname">做最好的自己</h2>
                                     <h4 class="text-overflow">作者：李开复</h4>
-                                                                            <h5 class="text-overflow">借阅人：<font
-                                                    color="#D81B60">admin</font></h5>
+                                                                            <h5 class="text-overflow">借阅人：可借阅</h5>
                                                                         <p class="book-pic">
                                         <a href="http://library51.app/book/16">
 
@@ -93,8 +92,7 @@
                                     
                                     <h2 class=" text-overflow bookname">世界如此险恶，你要内...</h2>
                                     <h4 class="text-overflow">作者：石勇</h4>
-                                                                            <h5 class="text-overflow">借阅人：<font
-                                                    color="#D81B60">345</font></h5>
+                                                                            <h5 class="text-overflow">借阅人：可借阅</h5>
                                                                         <p class="book-pic">
                                         <a href="http://library51.app/book/15">
 

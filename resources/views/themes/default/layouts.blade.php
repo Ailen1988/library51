@@ -21,7 +21,7 @@
         <![endif]-->
     </head>
     <body>
-        <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+        <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation" style="background-color: #2D9EA7">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -33,8 +33,8 @@
                     <a class="navbar-brand" href="{{url('/')}}">TooMee Library</a></div>
                 <div id="navbar" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active">
-                            <a href="/">Home</a></li>
+                        <li class="active" >
+                            <a href="/" style="background-color: #79C1C7">Home</a></li>
                         <li>
                             <form class="demo_search" action="{{url('search/keyword')}}" method="get">
                                 <i class="glyphicon glyphicon-search" id="open"></i>
