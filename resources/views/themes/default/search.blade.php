@@ -198,7 +198,7 @@
                 }
             });
 
-            location.reload();
+            location.reload(true);
 //            window.location.reload();
         })
 

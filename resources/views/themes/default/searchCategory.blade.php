@@ -191,7 +191,7 @@
                 complete: function (xhr, ts) {
                 }
             });
-            location.reload();
+            location.reload(true);
 //            window.location.reload();
         })
 
