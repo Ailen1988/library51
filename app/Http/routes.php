@@ -13,8 +13,9 @@
 
 Route::get('/', 'BookController@index', ['as' => 'index']);
 Route::get('book/{id?}', 'BookController@show');
-Route::get('borrow/store', 'BorrowController@store');
+Route::resource('borrow','BorrowController');
 // Route::get('/', 'ArticleController@index');
+//Route::get('book', 'BookController@store');
 
 //测试
 Route::get('test1/{name}', function($name) {
