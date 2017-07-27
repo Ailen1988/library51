@@ -188,8 +188,8 @@
                     }
                 },
                 error: function (xhr, type) {
-                    alert(d.msg);
-//                    $btn.button("error");
+//                    alert(d.msg);
+                    $btn.button("error");
                 },
                 complete: function (xhr, ts) {
                 }
