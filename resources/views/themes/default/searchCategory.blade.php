@@ -183,15 +183,16 @@
                         alert(d.msg);
 //                            $btn.button("error");
                     }
+                    location.reload(true);
                 },
                 error: function (xhr, type) {
 //                    alert(d.msg);
                         $btn.button("error");
+                    location.reload(true);
                 },
                 complete: function (xhr, ts) {
                 }
             });
-            location.reload(true);
 //            window.location.reload();
         })
 
