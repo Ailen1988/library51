@@ -13,6 +13,7 @@
 
 Route::get('/', 'BookController@index', ['as' => 'index']);
 Route::get('book/{id?}', 'BookController@show');
+Route::get('borrow/store', 'BorrowController@store');
 // Route::get('/', 'ArticleController@index');
 
 //测试
