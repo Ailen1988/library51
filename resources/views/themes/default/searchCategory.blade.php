@@ -159,7 +159,7 @@
             var $btn = $this.button('loading');
             $.ajax({
                 type: 'POST',
-                url: "{{URL::route('admin.borrow.store')}}",
+                url: "{{URL::route('borrow.store')}}",
                 data: $('.borrow-form').serialize(),
                 dataType: 'json',
                 headers: {
