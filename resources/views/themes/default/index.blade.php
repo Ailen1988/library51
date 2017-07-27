@@ -188,22 +188,21 @@
                     success: function (d) {
 
                         if (d.code == 1) {
-//                            $btn.button("complete");
                             alert(d.msg);
+                            $btn.button("complete");
 //                            $("#demo01").animatedModal();
                         } else if (d.code == 2) {
                             alert(d.msg);
-//                            $btn.button("exists");
+                            $btn.button("exists");
                         } else if (d.code == 3) {
                             alert(d.msg);
-//                            $btn.button("limit");
+                            $btn.button("limit");
                         } else {
                             alert(d.msg);
-//                            $btn.button("error");
+                            $btn.button("error");
                         }
                     },
                     error: function (xhr, type) {
-//                        alert(d.msg);
                         $btn.button("error");
                     },
                     complete: function (xhr, ts) {
@@ -211,8 +210,9 @@
 
 
                 });
-//                window.location.reload();
 
+                location.reload();
+//                window.location.reload();
             })
 
             // 刷新
