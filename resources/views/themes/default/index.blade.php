@@ -43,7 +43,11 @@
                                                 'bookpic'=>asset('/uploads/'.$v->pic)
                                             ]) !!}
                                             <button role="button" data-toggle="modal" type="button"
-                                                    class="btn btn-default borrow-btn ">
+                                                    class="btn btn-default borrow-btn"
+                                                    @if($v->name)
+                                                    disabled
+                                                    @endif
+                                            >
                                                 <span aria-hidden="true"></span>
                                                 跪求
                                             </button>
@@ -72,31 +76,31 @@
     </div><!--/.container-->
 
     {{--<ul>--}}
-        {{--<li><a id="demo01" href="#animatedModal">DEMO01</a></li>--}}
-        {{--<li><a id="demo02" href="#modal-02">DEMO02</a></li>--}}
+    {{--<li><a id="demo01" href="#animatedModal">DEMO01</a></li>--}}
+    {{--<li><a id="demo02" href="#modal-02">DEMO02</a></li>--}}
     {{--</ul>--}}
     {{--<!--DEMO01-->--}}
     {{--<div id="animatedModal">--}}
-        {{--<!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->--}}
-        {{--<div  id="btn-close-modal" class="close-animatedModal">--}}
-            {{--CLOSE MODAL--}}
-        {{--</div>--}}
+    {{--<!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->--}}
+    {{--<div  id="btn-close-modal" class="close-animatedModal">--}}
+    {{--CLOSE MODAL--}}
+    {{--</div>--}}
 
-        {{--<div class="modal-content">--}}
-            {{--<!--Your modal content goes here-->--}}
-        {{--</div>--}}
+    {{--<div class="modal-content">--}}
+    {{--<!--Your modal content goes here-->--}}
+    {{--</div>--}}
     {{--</div>--}}
 
     {{--<!--DEMO02-->--}}
     {{--<div id="modal-02">--}}
-        {{--<!--"THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID-->--}}
-        {{--<div  id="btn-close-modal" class="close-modal-02">--}}
-            {{--CLOSE MODAL--}}
-        {{--</div>--}}
+    {{--<!--"THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID-->--}}
+    {{--<div  id="btn-close-modal" class="close-modal-02">--}}
+    {{--CLOSE MODAL--}}
+    {{--</div>--}}
 
-        {{--<div class="modal-content">--}}
-            {{--<!--Your modal content goes here-->--}}
-        {{--</div>--}}
+    {{--<div class="modal-content">--}}
+    {{--<!--Your modal content goes here-->--}}
+    {{--</div>--}}
     {{--</div>--}}
     <!-- REQUIRED JS SCRIPTS -->
     <div class="container ">
@@ -132,9 +136,11 @@
                                     </form>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-default btn-close" data-dismiss="modal">关闭</button>
+                                    <button type="button" class="btn btn-default btn-close" data-dismiss="modal">关闭
+                                    </button>
                                     <button autocomplete="off" data-error-text="出错了!" data-complete-text="赏了"
-                                            data-limit-text="每人最多赏赐两本" data-exists-text="你来晚了" data-loading-text="执行中.." id="check-borrow-btn"
+                                            data-limit-text="每人最多赏赐两本" data-exists-text="你来晚了" data-loading-text="执行中.."
+                                            id="check-borrow-btn"
                                             type="button" class="btn btn-primary demo01">确定借出
                                     </button>
                                 </div>

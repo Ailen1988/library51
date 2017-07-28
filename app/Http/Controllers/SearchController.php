@@ -30,7 +30,7 @@ class SearchController extends Controller
 
     public function getKeyword(Request $request)
     {
-        $keyword = $request->input('keyword');
+        $keyword = trim(strip_tags($request->input('keyword')));
         if (empty($keyword)) {
             return redirect()->route('book.index');
         }
