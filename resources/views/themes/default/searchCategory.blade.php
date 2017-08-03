@@ -193,7 +193,6 @@
                     },
                     error: function (xhr, type) {
                         $btn.button("error");
-                        location.reload(true);
                     },
                     complete: function (xhr, ts) {
                     }
