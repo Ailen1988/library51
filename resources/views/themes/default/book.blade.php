@@ -18,7 +18,7 @@
                     <div class="col-md-6">
                         <h2 class="">{{strCut($book->bookname,30)}}</h2>
                         <h4 class="">作者：{{strCut($book->author, 30)}}</h4>
-                        <h4 class="">编号: {{strCut($book->booknum, 30)}}</h4>
+                        <h4 class="">编号：{{strCut($book->booknum, 30)}}</h4>
                     </div>
                     <div class="col-md-6">
                         <div>
