@@ -1,4 +1,6 @@
 tignore
 	*.[oaev]
 	*~
-	
+
+.idea
+public/themes/default/staticPage
