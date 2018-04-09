@@ -3,4 +3,4 @@ tignore
 	*~
 
 .idea
-public/themes/default/staticPage
+public/
