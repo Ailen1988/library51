@@ -2,5 +2,5 @@ tignore
 	*.[oaev]
 	*~
 
-.idea
+.idea/
 public/
