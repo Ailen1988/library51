@@ -11,7 +11,7 @@
                     @foreach($bookList['data'] as $k => $v)
                         <div class=" col-xs-6 col-lg-4">
                             <div class="thumbnail col-xs-12">
-                                <div class="col-xs-12 borrow">
+                                <div class="col-xs-12 borrow" title="{{$v->bookname}}">
                                     {{--<tr>--}}
 
                                     <h2 class=" text-overflow bookname">{{strCut($v->bookname,10)}}</h2>
