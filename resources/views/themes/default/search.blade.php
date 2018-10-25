@@ -115,7 +115,7 @@
                                 </div>
                                 <div class="modal-body">
                                     <form action="" class="form-horizontal">
-                                        <input type="hidden" name="bookname" id="input-bookname" value=""/>
+                                        <input type="hidden" name="book_id" id="input-book-id" value=""/>
                                         <input type="hidden" name="bookname" id="input-bookname" value=""/>
                                         <div class="form-group">
                                             <div class="col-xs-12">
